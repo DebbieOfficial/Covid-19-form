@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Form</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div id="main-content">
+      <div id="form">
+        <form
+          action=""
+          class="covid19-form"
+          autocomplete="off"
+          onsubmit="submitForm(event)"
+        >
+          <div>
+            <label for="firstName"> First Name</label>
+            <input id="firstName" name="firstName" type="text" required />
+          </div>
+          <div>
+            <label for="lastName"> Last Name</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+          <div>
+            <label for="email"> Email Address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div>
+            <label for="gender"> Gender</label>
+            <select id="gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              Recently came into Nigeria within the last 14 days?
+            </label>
+          </div>
+          <div>
+            <input type="submit" value="submit" id="btn-submit" />
+          </div>
+        </form>
+        <div class="table-container">
+          <table id="table-list">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email Address</th>
+                <th>Gender</th>
+                <th>
+                  Came to Nigeria <br />
+                  within the last 14 <br />
+                  days?
+                </th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="covid-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
