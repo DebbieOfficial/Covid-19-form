@@ -56,6 +56,7 @@ function editRow(td) {
     selectedRow.cells[3].innerHTML === "Yes";
 
   document.getElementById("btn-submit").value = "Update";
+  document.getElementById("btn-submit2").textContent = "Cancel";
 }
 function updateRecord(formData) {
   selectedRow.cells[0].innerHTML = formData.firstName + " " + formData.lastName;
@@ -69,6 +70,9 @@ function deleteRow(btn) {
     row.remove();
   }
 }
+function clearForm() {
+  reset();
+}
 function reset() {
   document.getElementById("firstName").value = "";
   document.getElementById("lastName").value = "";
@@ -78,4 +82,5 @@ function reset() {
   selectedRow = null;
 
   document.getElementById("btn-submit").value = "Submit";
+  document.getElementById("btn-submit2").textContent = "Clear";
 }
