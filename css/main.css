@@ -66,9 +66,9 @@ th {
 }
 .button-group {
   display: flex;
-  justify-content: flex-start; /* align them to the left */
+  justify-content: flex-start;
   align-items: center;
-  gap: 15px; /* space between buttons */
+  gap: 15px;
   margin-top: 20px;
   margin-left: 25%;
 }
